@@ -21,7 +21,7 @@ end
 end 
 
   def patients  
-    Appointment.all.each do |appointment| appointment.patient
+    Appointment.all.collect do |appointment| appointment.patient
 end 
 end 
 
